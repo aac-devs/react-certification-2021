@@ -3,7 +3,11 @@ import React from 'react';
 import './Layout.styles.css';
 
 function Layout({ children }) {
-  return <main className="container">{children}</main>;
+  return (
+    <React.Fragment>
+      <main className="container">{children}</main>;
+    </React.Fragment>
+  );
 }
 
 export default Layout;
